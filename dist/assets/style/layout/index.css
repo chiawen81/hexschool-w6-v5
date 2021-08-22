@@ -1,0 +1,66 @@
+.top-menu {
+  display: flex;
+  flex-direction: row;
+  top: 37.5%;
+  right: 1%;
+}
+
+.top-menu li {
+  padding-left: 32px;
+}
+
+.top-menu li a {
+  color: #707070;
+}
+
+.footer-bg {
+  height: 400px;
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-bg .footer-title {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 36px;
+}
+
+.footer-bg .subscribe-news {
+  padding-top: 12px;
+}
+
+.footer-bg .subscribe-news input {
+  width: 214px;
+  border-radius: 4px 0px 0px 4px;
+  padding: 12px;
+  border: white;
+  margin-right: -5px;
+}
+
+.footer-bg .subscribe-news button {
+  background-color: #E31277;
+  color: #fff;
+  border-radius: 0px 4px 4px 0px;
+  padding: 12px 52px;
+  border: #E31277;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-text p {
+  flex-grow: 1;
+}
+
+.footer-text ul li a {
+  color: #707070;
+  padding-left: 16px;
+}
+
+/*# sourceMappingURL=index.css.map */
