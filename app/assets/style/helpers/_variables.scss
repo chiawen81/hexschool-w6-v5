@@ -38,6 +38,7 @@ $grays: (
 // scss-docs-start color-variables
 $white:     #FFFFFF !default;
 $gray:      #707070 !default;
+$gray2:     #CED4DA !default;
 $light-gray:#EFEFEF !default;
 $black:     #000000 !default;
 $pink:      #E31277 !default;
@@ -58,6 +59,7 @@ $indigo:  #6610f2 !default;
 $colors: (
   "white":      $white,
   "gray":       $gray,
+  "gray2":       $gray2,
   "light-gray": $light-gray,
   "black":      $black,
   "pink":       $pink,
@@ -284,7 +286,9 @@ $spacers: (
   32: $spacer * 32,  
   40: $spacer * 40,  
   50: $spacer * 50,  
+  56: $spacer * 56,  
   60: $spacer * 60,  
+  62: $spacer * 62,  
   160: $spacer * 160,
   168: $spacer * 168
 ) !default;

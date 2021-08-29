@@ -7,6 +7,15 @@ $svImg:"https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/ricard
     background-size: cover;
     background-repeat: no-repeat;
     height: 480px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center ;
+}
+@media(max-width:576px){
+  .sv-img{
+      align-items: flex-end;
+      padding-bottom: 80px;
+  }
 }
 .nav-scroller {
     height: 52px; /* 隱藏下方捲軸 */
@@ -24,6 +33,74 @@ $svImg:"https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/ricard
         color: #707070;
         padding: 14px 25px;
     }
+}
+.hot-card{
+    margin: 0 0 16px 0;
+}
+.hot-card-info{
+    background-color:#EFEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 24px;
+}
+.hot-card-date{
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 24px;
+    div{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        h5{
+            line-height: 1.5;
+            font-weight: 900;
+        }
+        img{
+            padding-bottom: 50px;
+            width: 24px;
+        }
+    }
+
+}
+@media(max-width:576px){
+    .hot-card{
+        >img{
+            padding: 24px 15px 8px 15px;
+        }
+    }
+    .m-hot-card-btn{
+        background-color: #EFEFEF;
+        display: flex;
+        padding-bottom: 24px;
+
+        button{
+            padding: 10px 16px !important;
+            width: 100px;
+            font-size: 16px;
+        }
+    }
+    .m-hot-card-info{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        h6{
+            flex-grow: 1;
+            text-align: right;
+            line-height: 2.5;
+        }
+    }
+    .hot-card-info{
+        padding: 0 15px 4px 15px;
+        h5.fw-normal.flex-grow-1{
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+    }
+
 }
 
 .live-bg{
@@ -54,6 +131,17 @@ $svImg:"https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/ricard
 
     }
 }
+@media(max-width:576px){
+    .live-bg{
+        height: 464px;
+        .col-12.col-lg-5.bg-purple.px-24{
+            padding-bottom: 40px;
+        }
+    }
+        h5.pb-16{
+            font-size: 16px;
+        }
+}
 
 
 .swiper-container {
@@ -64,8 +152,9 @@ $svImg:"https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/ricard
   .swiper-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content:start;
+    justify-content:flex-start;
     align-items: center;
+
 
   }
   
@@ -82,3 +171,19 @@ $svImg:"https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/ricard
     object-fit: cover;
     
   }
+@media(max-width:576px){
+    .swiper-wrapper{
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: flex-start;
+
+        .swiper-slide {
+            padding-bottom: 40px;
+
+            img{
+                width: 345px;  
+            }
+        }
+    }
+
+}

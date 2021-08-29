@@ -15,13 +15,13 @@
 
 
   <body>
-    <div class="container position-relative py-28">
+    <div class="container-fluid position-relative py-20 py-lg-28">
       <h2 class="text-center text-dark-red">EXHIBINECTION</h2>
-      <ul class="top-menu position-absolute">
-        <li>
+      <ul class="top-menu">
+        <li class="m-ds-none">
           <a href="">Sign in</a>
         </li>
-        <li>
+        <li class="m-ds-none">
           <a href="">Sign up</a>
         </li>
         <li>
@@ -38,11 +38,11 @@
     <%- contents %>
     
     
-    <footer class="pt-60">
+    <footer>
       <div class="container-fluid area2 footer-bg">
-        <div class="footer-title ">
-          <h2 class="text-white lh-base">想收到最新消息嗎？</h2>
-          <h2 class="text-white lh-base">快訂閱我們！</h2>
+        <div class="footer-title">
+          <h2>想收到最新消息嗎？</h2>
+          <h2>快訂閱我們！</h2>
           <div class="subscribe-news">
             <input type="e-mail" placeholder="輸入您的電子信箱">
             <button>訂閱</button>
@@ -50,13 +50,17 @@
         </div>
       </div>
     
-      <div class="container-fluid d-flex area2 py-28 footer-text"> 
+      <div class="container-fluid area2 footer-text">
+     
           <h4>EXHIBINECTION</h4>
-          <p class="ps-16">© 2020. All Rights Reserved.</p>
-        <ul class="d-flex">
+          <p class="ps-lg-16">© 2020. All Rights Reserved.</p>
+    
+      
+        <ul class="d-flex m-ds-none">
           <li><a href="">Sign in</a></li>
           <li><a href="">Sign up</a></li>
         </ul>
+    
       </div>
     </footer>
 
@@ -84,6 +88,15 @@
       768:{
         slidesPerView: 3,
         spaceBetween: 30       
+      },
+      576:{
+        slidesPerView: 2,
+        spaceBetween: 20       
+      },
+      375:{
+        // slidesPerGroup:3,
+        slidesPerView: 1,
+        spaceBetween: 0      
       },
     }
 });
