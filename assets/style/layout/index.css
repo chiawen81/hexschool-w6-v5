@@ -1,6 +1,47 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.area1 {
+  padding: 0px 20px;
+}
+
+.area2 {
+  padding: 0px 85px;
+}
+
+@media (max-width: 576px) {
+  .area2 {
+    padding: 0px 15px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, span, form, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
 .top-menu {
   display: flex;
   flex-direction: row;
+  position: absolute;
   top: 37.5%;
   right: 1%;
 }
@@ -13,9 +54,22 @@
   color: #707070;
 }
 
+@media (max-width: 576px) {
+  .top-menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 20px;
+    right: 26px;
+  }
+  .top-menu li {
+    padding-left: 0x;
+  }
+}
+
 .footer-bg {
   height: 400px;
-  background-image: url(https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg);
+  background-image: url(https://hexschool.github.io/webLayoutTraining1st/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,12 +83,17 @@
   padding-bottom: 36px;
 }
 
+.footer-bg .footer-title h2 {
+  color: white;
+  line-height: 1.5;
+}
+
 .footer-bg .subscribe-news {
   padding-top: 12px;
 }
 
 .footer-bg .subscribe-news input {
-  width: 214px;
+  width: 210px;
   border-radius: 4px 0px 0px 4px;
   padding: 12px;
   border: white;
@@ -45,13 +104,14 @@
   background-color: #E31277;
   color: #fff;
   border-radius: 0px 4px 4px 0px;
-  padding: 12px 52px;
+  padding: 12px 50px;
   border: #E31277;
 }
 
 .footer-text {
   display: flex;
   justify-content: flex-start;
+  padding: 28px 15px;
 }
 
 .footer-text p {
@@ -61,6 +121,16 @@
 .footer-text ul li a {
   color: #707070;
   padding-left: 16px;
+}
+
+@media (max-width: 576px) {
+  .footer-text {
+    flex-direction: column;
+    padding: 16px 15px;
+  }
+  .m-ds-none {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
